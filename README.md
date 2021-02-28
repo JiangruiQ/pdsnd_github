@@ -7,7 +7,10 @@ This project is created on **2021-02-28**.
 Explore US Bikeshare Data.
 
 ### Description
-Describe what your project is about and what it does
+* Use Python to understand US bikeshare data.
+* Calculate statistics
+* Build an interactive environment where a user chooses the data and filter for a dataset to analyze.
+
 
 ### Files used
 Include the files used
