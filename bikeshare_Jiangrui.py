@@ -162,9 +162,9 @@ def trip_duration_stats(df):
 
     # display total travel time
     # display mean travel time
-    tot_dur = df['Trip Duration'].sum()
-    mean_dur = df['Trip Duration'].mean()
-    print('\nTotal and mean travel time in the selected months and/or days is {} and {}, respectively'.format(tot_dur, mean_dur))
+    tot_dur = round(df['Trip Duration'].sum()/3600, 3)
+    mean_dur = round(df['Trip Duration'].mean()/3600, 3)
+    print('\nTotal and mean travel time (hours) in the selected months and/or days is {} and {}, respectively'.format(tot_dur, mean_dur))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -182,7 +182,7 @@ def user_stats(df, city):
     utype_value = df['User Type'].value_counts().values
     print('\nUser type 1: {}, counts: {};\nUser type 2: {}, counts: {};\n'.format(utype_index[0], utype_value[0], utype_index[1], utype_value[1]))
 
-    if city == 'washington':
+    if city.lower() == 'washington':
         print('We are lack of info about gender and birth year of users in Washington.')
     else:
         # Display counts of gender
