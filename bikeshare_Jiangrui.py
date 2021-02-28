@@ -182,7 +182,7 @@ def user_stats(df, city):
     utype_value = df['User Type'].value_counts().values
     print('\nUser type 1: {}, counts: {};\nUser type 2: {}, counts: {};\n'.format(utype_index[0], utype_value[0], utype_index[1], utype_value[1]))
 
-    if city == 'washington':
+    if city.lower() == 'washington':
         print('We are lack of info about gender and birth year of users in Washington.')
     else:
         # Display counts of gender
