@@ -162,9 +162,9 @@ def trip_duration_stats(df):
 
     # display total travel time
     # display mean travel time
-    tot_dur = df['Trip Duration'].sum()
-    mean_dur = df['Trip Duration'].mean()
-    print('\nTotal and mean travel time in the selected months and/or days is {} and {}, respectively'.format(tot_dur, mean_dur))
+    tot_dur = df['Trip Duration'].sum()/3600
+    mean_dur = df['Trip Duration'].mean()/3600
+    print('\nTotal and mean travel time (hours) in the selected months and/or days is {} and {}, respectively'.format(tot_dur, mean_dur))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
