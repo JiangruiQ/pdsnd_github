@@ -11,9 +11,12 @@ Explore US Bikeshare Data.
 * Calculate statistics
 * Build an interactive environment where a user chooses the data and filter for a dataset to analyze.
 
-
 ### Files used
-Include the files used
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+
+>More data can be accessed here if you would like to dig deep into it ([Chicago](https://www.divvybikes.com/system-data), [New York](https://www.citibikenyc.com/system-data), [Washington](https://www.capitalbikeshare.com/system-data))
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
